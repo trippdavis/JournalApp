@@ -1,6 +1,7 @@
 JournalApp.Views.PostsIndexItem = Backbone.View.extend({
-  template: JST['posts/indexItem'],
+  template: JST['posts/index_item'],
   tagName: 'li',
+  
   events: {
     "click .delete": "deletePost"
   },

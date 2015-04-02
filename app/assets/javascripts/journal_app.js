@@ -5,6 +5,8 @@ window.JournalApp = {
   Routers: {},
   initialize: function() {
     // alert('Hello from Backbone!');
+    var router = new JournalApp.Routers.Posts({ $rootEl: $('div.journal-app') });
+    Backbone.history.start();
   }
 };
 

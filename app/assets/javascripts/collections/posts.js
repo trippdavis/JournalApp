@@ -1,6 +1,8 @@
 JournalApp.Collections.Posts = Backbone.Collection.extend({
   url: "/posts",
+
   model: JournalApp.Models.Post,
+
   getOrFetch: function(id) {
     var posts = this;
     var post;
@@ -14,5 +16,4 @@ JournalApp.Collections.Posts = Backbone.Collection.extend({
     }
     return post;
   }
-
 });
